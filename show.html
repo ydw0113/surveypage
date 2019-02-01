@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <div id="content"></div>
+<p>
+  <div id="result"></div>
+  <div class="sv_main survey-page-header-content">
+      <button onclick="window.location = '/'">&lt&nbspBack</button>
+  </div>
+
+
+  <script language="javascript">
+    temp = location.href.split("?");
+
+    data = temp[1].split(":");
+    region = decodeURI(data[0]);
+    photo = data[1];
+
+    document.querySelector('#result').innerHTML = photo + " " + region;
+
+    if(photo === "A") {
+      if(region === "강북")
+       document.querySelector('#content').innerHTML = photo+"와 "+region+"을 고르셨습니다."
+       else {
+       document.querySelector('#content').innerHTML = photo+"와 "+region+"을 고르셨습니다."
+       }
+    } if(photo === "B"){
+      if(region === "강북")
+       document.querySelector('#content').innerHTML =photo+"와 "+region+"을 고르셨습니다."
+       else {
+       document.querySelector('#content').innerHTML =photo+"와 "+region+"을 고르셨습니다."
+       }
+    } if(photo === "C"){
+      if(region === "강북")
+       document.querySelector('#content').innerHTML =photo+"와 "+region+"을 고르셨습니다."
+       else {
+       document.querySelector('#content').innerHTML =photo+"와 "+region+"을 고르셨습니다."
+       }
+    } if(photo === "D"){
+      if(region === "강북")
+       document.querySelector('#content').innerHTML =photo+"와 "+region+"을 고르셨습니다."
+       else {
+       document.querySelector('#content').innerHTML =photo+"와 "+region+"을 고르셨습니다."
+       }
+    }
+  </script>
+</body>
+
+</html>
